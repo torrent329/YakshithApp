@@ -9,13 +9,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .card {
+            transition: transform 0.2s;
+            border: none;
+        }
         .card:hover {
             transform: scale(1.05);
-            transition: transform 0.3s;
+        }
+        .card-title {
+            color: #007bff;
         }
         footer {
-            background-color: #f8f9fa;
-            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
             text-align: center;
         }
     </style>
@@ -26,14 +42,14 @@
     <h1 class="display-4">Welcome to My Awesome CICD Page!</h1>
     <p class="lead">Developed by Miguel during Az-204 Training</p>
     <p>
-        <a href="http://asp.net" class="btn btn-primary btn-lg">Learn More &raquo;</a>
+        <a href="http://asp.net" class="btn btn-light btn-lg">Learn More &raquo;</a>
     </p>
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+    <div class="row text-center">
+        <div class="col-md-4 mb-4">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">GitHub</h5>
                     <p class="card-text">Explore the power of GitHub in managing your codebase and CI/CD pipelines.</p>
@@ -41,8 +57,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+        <div class="col-md-4 mb-4">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">My Libraries</h5>
                     <p class="card-text">Use NuGet to easily manage libraries in your ASP.NET projects.</p>
@@ -50,8 +66,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
+        <div class="col-md-4 mb-4">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Host Your Web</h5>
                     <p class="card-text">Find the perfect web hosting service for your applications.</p>
@@ -71,3 +87,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
